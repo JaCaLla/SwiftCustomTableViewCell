@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -29,25 +28,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJ0-hx-r4n">
-                                                    <rect key="frame" x="19" y="21" width="150" height="150"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="261" verticalHuggingPriority="261" translatesAutoresizingMaskIntoConstraints="NO" id="cJ0-hx-r4n">
+                                                    <rect key="frame" x="8" y="8" width="200" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="Dam-UT-NdX"/>
+                                                        <constraint firstAttribute="width" constant="200" id="qhz-dx-COb"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-DM-Gi1">
-                                                    <rect key="frame" x="177" y="21" width="415" height="150"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-DM-Gi1">
+                                                    <rect key="frame" x="216" y="-1" width="365" height="200"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="eDD-DM-Gi1" firstAttribute="leading" secondItem="cJ0-hx-r4n" secondAttribute="trailing" constant="8" id="1gx-Dl-0Td"/>
-                                                <constraint firstItem="eDD-DM-Gi1" firstAttribute="width" secondItem="cJ0-hx-r4n" secondAttribute="width" multiplier="2.765" id="1q0-K9-CdD"/>
-                                                <constraint firstItem="eDD-DM-Gi1" firstAttribute="top" secondItem="was-ec-9Ga" secondAttribute="topMargin" constant="13" id="B1a-fu-GIb"/>
-                                                <constraint firstItem="eDD-DM-Gi1" firstAttribute="height" secondItem="cJ0-hx-r4n" secondAttribute="height" id="JjN-L1-OnN"/>
-                                                <constraint firstItem="cJ0-hx-r4n" firstAttribute="leading" secondItem="was-ec-9Ga" secondAttribute="leadingMargin" constant="11" id="eHl-kq-gCE"/>
-                                                <constraint firstItem="cJ0-hx-r4n" firstAttribute="top" secondItem="was-ec-9Ga" secondAttribute="topMargin" constant="13" id="uMA-o2-YUx"/>
-                                                <constraint firstItem="eDD-DM-Gi1" firstAttribute="trailing" secondItem="was-ec-9Ga" secondAttribute="trailingMargin" id="v6q-DG-qKY"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="eDD-DM-Gi1" secondAttribute="bottom" constant="20" id="wWc-gC-acc"/>
+                                                <constraint firstItem="cJ0-hx-r4n" firstAttribute="top" secondItem="was-ec-9Ga" secondAttribute="topMargin" id="FIF-fw-k8Z"/>
+                                                <constraint firstItem="eDD-DM-Gi1" firstAttribute="top" secondItem="was-ec-9Ga" secondAttribute="topMargin" constant="-9" id="KmV-wz-agE"/>
+                                                <constraint firstItem="eDD-DM-Gi1" firstAttribute="leading" secondItem="cJ0-hx-r4n" secondAttribute="trailing" constant="8" id="Kqx-hH-q0s"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eDD-DM-Gi1" secondAttribute="trailing" constant="11" id="bVe-yk-Hwf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="eDD-DM-Gi1" secondAttribute="bottom" constant="-8" id="fmD-zE-fnL"/>
+                                                <constraint firstItem="cJ0-hx-r4n" firstAttribute="leading" secondItem="was-ec-9Ga" secondAttribute="leadingMargin" id="nUN-Kl-a8f"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
